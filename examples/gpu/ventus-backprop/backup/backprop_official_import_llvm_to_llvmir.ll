@@ -1,4 +1,3 @@
-; ModuleID = 'LLVMDialectModule'
 source_filename = "LLVMDialectModule"
 target datalayout = "e-i64:64-i1:8-i8:8-i16:16-i32:32-f16:16-f64:64-f128:128"
 

@@ -1,5 +1,5 @@
 # Change it to your local path.
-LLVM_BUILD := /root/ventus/llvm-project/build
+LLVM_BUILD := ${LLVM_BUILD_DIR}
 
 MLIR_TRANSLATE := ${LLVM_BUILD}/bin/mlir-translate
 DIFF_TOOL := vimdiff
@@ -19,8 +19,8 @@ view-diff: backprop_custom_translate.s backprop_official.s
 #################### Running backprop_*.ll based on ventus toolchains ####################
 
 # Change it to your local path.
-VENTUS_INSTALL_PREFIX := /root/ventus/llvm-project/install
-VENTUS_SPIKE_BUILD := /root/ventus/ventus-gpgpu-isa-simulator/gpgpu-testcase/driver/build
+# VENTUS_INSTALL_PREFIX := /root/ventus/llvm-project/install
+VENTUS_SPIKE_BUILD := ${SPIKE_SRC_DIR}/gpgpu-testcase/driver/build
 
 # All backprop_official.ll, backprop_manual.ll and backprop_official_import_llvm_to_llvmir.ll can be renamed to backprop.ll.
 get-backprop-riscv:
