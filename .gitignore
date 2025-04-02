@@ -1,5 +1,4 @@
 *.xls
-*.txt
 
 # VS Code project files
 .vscode
@@ -18,3 +17,9 @@
 .triton
 
 test_openmp*
+
+*autotvm.log
+ansor_matmul.json
+
+build
+*.bak
